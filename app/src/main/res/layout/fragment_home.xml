@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".view.HomeFragment">
+
+<LinearLayout
+    android:id="@+id/chooseLanguagePane"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_languageFrom"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_gravity="start"
+        android:layout_weight="1"
+        android:gravity="end|center_vertical"
+        android:paddingEnd="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingStart="8dp"
+        android:textColor="@color/textBlack"
+        android:textSize="@dimen/item_text_size_normal"
+        tools:text="Russian" />
+
+    <ImageButton
+        android:id="@+id/ib_switch_direction"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        android:contentDescription="switch direction"
+        app:srcCompat="@drawable/ic_change_arrows_black_24dp" />
+
+    <TextView
+        android:id="@+id/tv_languageTo"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_gravity="end"
+        android:layout_weight="1"
+        android:gravity="start|center_vertical"
+        android:paddingEnd="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingStart="8dp"
+        android:textColor="@color/textBlack"
+        android:textSize="@dimen/item_text_size_normal"
+        tools:text="English" />
+
+</LinearLayout>
+
+<EditText
+    android:id="@+id/translation_editText"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/background_edit_text"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="top"
+    android:hint="@string/textField_hint"
+    android:inputType="textMultiLine"
+    android:padding="8dp"
+    android:textColor="@color/textBlack"
+    tools:text="привет" />
+
+<TextView
+    android:id="@+id/tv_translation_result"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:padding="8dp"
+    android:textSize="16sp"
+    android:textStyle="normal"
+    android:textColor="@color/textBlack"
+    tools:text="hello" />
+
+
+</LinearLayout>

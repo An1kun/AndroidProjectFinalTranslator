@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="8dp">
+        <TextView
+            android:id="@+id/languages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:text="English -> Russian" />
+
+        <TextView
+            android:id="@+id/first_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingEnd="12dp"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:maxLines="6"
+            android:textSize="12sp"
+            tools:text="Animals is about super heroes that don't eat meat" />
+        <TextView
+            android:id="@+id/second_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="12dp"
+            android:ellipsize="end"
+            android:maxLines="6"
+            android:textSize="12sp"
+            tools:text="Животные это про супер героев, которые не едят мясо" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
